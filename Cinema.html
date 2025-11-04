@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema</title>
+
+<!--  1. Cabeçalho da página: um &lt;h1&gt; com o nome do tema e um parágrafo &lt;p&gt; explicando o
+objetivo da página.
+ 2. Imagem principal: use a tag &lt;img&gt; com o atributo alt descrevendo a imagem.
+ 3. Lista de destaques: crie uma lista ordenada (&lt;ol&gt;) ou não ordenada (&lt;ul&gt;) com pelo
+menos 3 itens.
+ 4. Tabela informativa: monte uma tabela (&lt;table&gt;) com 3 colunas e 3 linhas contendo
+informações sobre o tema.
+ 5. Link externo: adicione um link (&lt;a href&gt;) que leve a outro site relacionado ao tema.
+ 6. Mídia: insira um vídeo (&lt;video&gt;) ou áudio (&lt;audio&gt;) relacionado.
+ 7. Formulário de contato: adicione campos de Nome, E-mail, Mensagem e um botão de
+envio. -->
+
+</head>
+<body>
+    <h1> <strong>Cinema</strong></h1>
+    <p>Bem-vindo ao nosso site , onde exploramos o mundo dos filmes e da sétima arte.</p>
+
+    <img src="imagem-cinema.jpg" alt="Imagem representativa de cinema">
+
+    <h2>Destaques</h2>
+    <ul>
+        <li>Novos lançamentos</li>
+        <li>Críticas de filmes</li>
+        <li>Entrevistas com diretores</li>
+    </ul>
+
+    <h2>Tabela de Filmes</h2>
+    <table>
+        <tr>
+            <th>Título</th>
+            <th>Diretor</th>
+            <th>Ano</th>
+        </tr>
+        <tr>
+            <td>O Poderoso Chefão</td>
+            <td>Francis Ford Coppola</td>
+            <td>1972</td>
+        </tr>
+        <tr>
+            <td>Parasita</td>
+            <td>Bong Joon-ho</td>
+            <td>2019</td>
+        </tr>
+        <tr>
+            <td>A Origem</td>
+            <td>Christopher Nolan</td>
+            <td>2010</td>
+        </tr>
+    </table>
+
+    <h2>Links Úteis</h2>
+    <p>Para mais informações sobre cinema, visite <a href="https://www.cinematoday.com.br">Cinema Today</a>.</p>
+
+    <h2>Mídia</h2>
+    <video controls>
+        <source src="trailer-filme.mp4" type="video/mp4">
+        Seu navegador não suporta a tag de vídeo.
+    </video>
+
+    <h2>Contato</h2>
+    <form action="enviar.php" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
